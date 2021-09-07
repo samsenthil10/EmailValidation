@@ -4,12 +4,10 @@ public class EmailValidation {
 
 	public static boolean emailValidator(String email) {
 
-		return email.matches("abc(.*)");
+		return email.matches("(abc(.*)+(?<!\\.)@(.*))+(?<!\\.)$");
 	}
 
 	public static void main(String[] args) {
-
-
 
 		String[] testCases = {
 				"abc.xyz@bridgelabz.co.in",
