@@ -4,7 +4,7 @@ public class EmailValidation {
 
 	public static boolean emailValidator(String email) {
 
-		return email.matches("(abc(.*)+(?<!\\.)@(.*))+(?<!\\.)$");
+		return email.matches("(abc(.*)+(?<!\\.)@([0-9a-zA-Z]{1,}))\\.([a-zA-Z]{2})(.*)+(?<!\\.)$");
 	}
 
 	public static void main(String[] args) {
